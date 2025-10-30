@@ -5,7 +5,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 import pickle
 
 #fetch the data from data/features
-train_data = pd.read_csv('./data/features/train_bow.csv')
+train_data = pd.read_csv('./data/features/train_tfidf.csv')
 
 X_train = train_data.iloc[:,0:-1].values
 y_train = train_data.iloc[:,-1].values
